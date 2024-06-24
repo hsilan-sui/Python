@@ -25,3 +25,24 @@ print('lambda寫法,fn expression',ne)
 
 ## 寫一個lambda 可以做加法運算 請直接呼叫
 print((lambda x,y: x + y)(888,999))
+
+### js匿名函式
+# ((a,b) => a+b)(888,999)
+### 匿名函式 作為另一個函式的參數
+# setTimeout(() => console.log('每三秒輸出一次'), 3000)
+
+# def math(a,b,f):
+#     return f(a,b)
+
+## 匿名函式使用與map()
+mylist=[5, 10, 15, 20, 25, 30]
+
+squarlist = list(map(lambda x: x**2, mylist))
+
+print(f'串列平方值= ', squarlist)
+
+num = 322
+
+test =list(map(int, list(str(num))))
+
+print(test)
