@@ -1,5 +1,5 @@
 ## generate public & private key pair in ur computer
-- open Git Bash 
+- open Git Bash (here use this way "ed25519" to gen the pair key,can also use "rsa" instead )
 
 ```bash=
 $ ssh-keygen -t ed25519 -C "your gituser email" 
