@@ -13,6 +13,7 @@ Enter file in which to save the key (/c/Users/User/.ssh/id_ed25519): /c/Users/Us
 # Your public key has been saved in /c/Users/User/.ssh/id_ed25519.pub (PUBLIC KEY)
 
 ```
+- ![ssh key pair](../static/ssh_key_pair.jpg)
 
 - 去.ssh檔案夾看一下剛剛生成的key pair檔案
 ```bash=
