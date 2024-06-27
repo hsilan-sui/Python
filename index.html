@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SLEEP....</h1>
+    <div class="wrapper">
+        <section>
+            <div class="content-panel">
+                <h2>workout list</h2>
+            </div>
+        </section>
+        <section>
+            <div class="map-panel">
+            </div>
+        </section>
+    </div>
+    <script>
+        //利用GeolongLocation API得到GeolocationPosition物件=>找到coords取得經緯度
+        function getLocation() {
+            if("geolocation" in navigator) {
+                //get position
+                navigator.geolocation.getCurrentPosition(position => {
+                    console.log(position.coords)
+                    console.log(position.coords.longitude)
+                    console.log(position.coords.latitude)
+                })
+            }
+        }
+       
+        getLocation()
+    </script>
+</body>
+</html>
